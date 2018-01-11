@@ -54,7 +54,7 @@ open class WebSocketSwampTransport: SwampTransport, WebSocketDelegate {
     }
     
     open func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
-        delegate?.swampTransportDidDisconnect(error as! NSError, reason: self.disconnectionReason)
+        delegate?.swampTransportDidDisconnect((error! as NSError), reason: self.disconnectionReason)
     }
     
     open func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
