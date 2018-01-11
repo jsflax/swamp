@@ -13,8 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "Swamp",
-            dependencies: ["SwiftyJSON", "Starscream", "CryptoSwift"],
-            path: "."
+            dependencies: ["SwiftyJSON", "Starscream", "CryptoSwift"]
         )
     ]
 )
